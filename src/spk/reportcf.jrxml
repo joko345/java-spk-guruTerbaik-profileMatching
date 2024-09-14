@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="72b908e8-19a1-41f8-8042-f8fc737c739f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="10ab3b90-087f-4a72-82b6-bcf67ecc2b3a"/>
+	<queryString>
+		<![CDATA[SELECT
+*
+FROM cftabel]]>
+	</queryString>
+	<field name="idcf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idGap" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idKelas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilaiDisiplin" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilaiKomitmen" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="totalMateri" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilaiLoyal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilaiPrestasi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilaiCore" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilaiSecond" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="97" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="031b903b-24ea-411a-9b31-4d08d8093937" x="100" y="45" width="208" height="29"/>
+				<textElement/>
+				<text><![CDATA[Gg. Majelis No.79, Abadijaya, Kec. Sukmajaya, Kota Depok, Jawa Barat 16417]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8eaea29c-1862-4007-9970-23cc4a89fe68" x="100" y="25" width="298" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Core & Second Factor SMK YAPPA DEPOK]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="3b3a1a78-6445-487e-88d1-318663c21351" x="-13" y="-4" width="100" height="94"/>
+				<imageExpression><![CDATA["C:\\Users\\Joko Prasetyo Utomo\\Documents\\NetBeansProjects\\spk\\src\\bg\\LOGOsmp.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="f8a8c739-49b6-46a0-8c26-f0cf3a400515" x="436" y="45" width="120" height="45"/>
+				<textElement/>
+				<text><![CDATA[Telepon: (021) 7712022
+Provinsi: Jawa Barat]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="2" splitType="Stretch">
+			<line>
+				<reportElement uuid="66e9a1fd-ae64-4896-bcdf-d65c575775f0" x="-25" y="0" width="612" height="1"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="461dcd65-b220-4631-bf43-f5077d921756" mode="Opaque" x="-1" y="15" width="49" height="20" backcolor="#999999"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ID Core]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="690ad17f-b44d-49b4-8ab8-a527f282caa8" mode="Opaque" x="103" y="15" width="60" height="20" backcolor="#999999"/>
+				<textElement textAlignment="Left">
+					<font size="12" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[  ID Kelas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0288bc7f-0a6e-4623-8b36-20dd1de88546" mode="Opaque" x="162" y="15" width="55" height="20" backcolor="#999999"/>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Disiplin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="35988c1e-743d-4828-928e-4a281c05137d" mode="Opaque" x="210" y="15" width="65" height="20" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Komitmen]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="cd676298-131c-4958-add5-c164810fa635" x="-1" y="0" width="100" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="461dcd65-b220-4631-bf43-f5077d921756" mode="Opaque" x="47" y="15" width="57" height="20" backcolor="#999999"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ID Second]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="35988c1e-743d-4828-928e-4a281c05137d" mode="Opaque" x="273" y="15" width="59" height="20" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Materi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="35988c1e-743d-4828-928e-4a281c05137d" mode="Opaque" x="316" y="15" width="65" height="20" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Loyalitas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="35988c1e-743d-4828-928e-4a281c05137d" mode="Opaque" x="377" y="15" width="65" height="20" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Prestasi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="27dccc44-6651-4dbf-9199-611b51301049" mode="Opaque" x="433" y="15" width="50" height="20" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Core]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="27dccc44-6651-4dbf-9199-611b51301049" mode="Opaque" x="482" y="15" width="73" height="20" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Second]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement uuid="ef1cdfaa-ab8c-41a5-8a35-8daec1a2da27" x="-1" y="0" width="45" height="20"/>
+				<box leftPadding="2" bottomPadding="0" rightPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idcf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="56d2515e-5180-4d40-b4fd-0451700e6157" x="44" y="0" width="62" height="20"/>
+				<box leftPadding="2" bottomPadding="0" rightPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idGap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="787e6ab0-6de2-401c-bc73-9b1cd6ea1c50" x="107" y="0" width="50" height="20"/>
+				<box leftPadding="2" bottomPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idKelas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8fd6304b-07dd-4593-a432-322ca79a79c4" x="157" y="0" width="55" height="20"/>
+				<box leftPadding="2" bottomPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaiDisiplin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="31ddfa79-d31b-438c-b667-da3aec419191" x="212" y="0" width="54" height="20"/>
+				<box leftPadding="1" bottomPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaiKomitmen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="27993748-ad54-4cc1-8ea8-29f023cad2a0" x="266" y="0" width="50" height="20"/>
+				<box leftPadding="2" bottomPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalMateri}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="952622ca-2a3b-48d1-aeb0-5680ba0363f1" x="316" y="0" width="55" height="20"/>
+				<box leftPadding="2" bottomPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaiLoyal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ac8d0199-41a8-4eca-9cd7-330a37b7d8b1" x="371" y="0" width="50" height="20"/>
+				<box leftPadding="2" bottomPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaiPrestasi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="613c7d1e-c7e9-44e2-94de-d43304193a20" x="421" y="0" width="50" height="20"/>
+				<box leftPadding="2" bottomPadding="2">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaiCore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cb329917-9f9c-46fb-bfbe-9a4116f68d2d" x="471" y="0" width="84" height="20"/>
+				<box leftPadding="2" bottomPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaiSecond}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="32" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

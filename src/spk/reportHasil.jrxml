@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="72b908e8-19a1-41f8-8042-f8fc737c739f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="10ab3b90-087f-4a72-82b6-bcf67ecc2b3a"/>
+	<queryString>
+		<![CDATA[SELECT
+*
+FROM totaltabel]]>
+	</queryString>
+	<field name="idTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idcf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilaiCore" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilaiSecond" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="persenCF" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="persenSF" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="totalakhir" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="97" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="031b903b-24ea-411a-9b31-4d08d8093937" x="100" y="45" width="208" height="29"/>
+				<textElement/>
+				<text><![CDATA[Gg. Majelis No.79, Abadijaya, Kec. Sukmajaya, Kota Depok, Jawa Barat 16417]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8eaea29c-1862-4007-9970-23cc4a89fe68" x="100" y="25" width="298" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Core & Second Factor SMK YAPPA DEPOK]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="3b3a1a78-6445-487e-88d1-318663c21351" x="-13" y="-4" width="100" height="94"/>
+				<imageExpression><![CDATA["C:\\Users\\Joko Prasetyo Utomo\\Documents\\NetBeansProjects\\spk\\src\\bg\\LOGOsmp.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="f8a8c739-49b6-46a0-8c26-f0cf3a400515" x="436" y="45" width="120" height="45"/>
+				<textElement/>
+				<text><![CDATA[Telepon: (021) 7712022
+Provinsi: Jawa Barat]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="2" splitType="Stretch">
+			<line>
+				<reportElement uuid="66e9a1fd-ae64-4896-bcdf-d65c575775f0" x="-25" y="0" width="612" height="1"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="461dcd65-b220-4631-bf43-f5077d921756" mode="Opaque" x="-1" y="15" width="75" height="20" backcolor="#999999"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ID Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0288bc7f-0a6e-4623-8b36-20dd1de88546" mode="Opaque" x="205" y="15" width="81" height="20" backcolor="#999999"/>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nilai Second]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="35988c1e-743d-4828-928e-4a281c05137d" mode="Opaque" x="284" y="15" width="91" height="20" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Persen Core]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="cd676298-131c-4958-add5-c164810fa635" x="-1" y="0" width="100" height="13"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="461dcd65-b220-4631-bf43-f5077d921756" mode="Opaque" x="73" y="15" width="75" height="20" backcolor="#999999"/>
+				<textElement textAlignment="Left">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ID CFSF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="35988c1e-743d-4828-928e-4a281c05137d" mode="Opaque" x="374" y="15" width="95" height="20" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Persen Second]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="35988c1e-743d-4828-928e-4a281c05137d" mode="Opaque" x="469" y="15" width="86" height="20" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Total Akhir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="690ad17f-b44d-49b4-8ab8-a527f282caa8" mode="Opaque" x="141" y="15" width="65" height="20" backcolor="#999999"/>
+				<textElement textAlignment="Left">
+					<font size="12" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Nilai Core]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement uuid="ba2742cd-dd76-4457-a151-a4ce60378d1b" x="-1" y="0" width="70" height="20"/>
+				<box leftPadding="2" bottomPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="118b3469-d76f-420b-b916-ce1495b5fb19" x="69" y="0" width="65" height="20"/>
+				<box leftPadding="2" bottomPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idcf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4beb70e1-7b5e-44ab-b243-70fe0631439a" x="134" y="0" width="70" height="20"/>
+				<box leftPadding="2" bottomPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaiCore}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5c54ba6f-e91f-467c-b451-29d560971df2" x="204" y="0" width="70" height="20"/>
+				<box leftPadding="2" bottomPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaiSecond}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fae93279-d2a2-4e22-85c9-5240ccc4f95e" x="274" y="0" width="95" height="20"/>
+				<box leftPadding="2" bottomPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{persenCF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a9efe670-b9ba-4cc1-b6c1-083a145f5a15" x="369" y="0" width="89" height="20"/>
+				<box leftPadding="2" bottomPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{persenSF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a74bbf12-14f3-412d-ac99-7db614042a3c" x="458" y="0" width="97" height="20"/>
+				<box leftPadding="2" bottomPadding="1">
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalakhir}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="32" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

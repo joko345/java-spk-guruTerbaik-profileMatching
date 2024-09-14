@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6fc59d66-9925-4072-b2bc-dae470955623">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="69"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT * FROM peringkattable]]>
+	</queryString>
+	<field name="idRank" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idcf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idTotal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idGuru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="namaGuru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilaiDisiplin" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilaiKomitmen" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="totalMateri" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilaiLoyal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilaiPrestasi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilaiCore" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nilaiSecond" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="totalAkhir" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="103" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="031b903b-24ea-411a-9b31-4d08d8093937" x="110" y="56" width="208" height="29"/>
+				<textElement/>
+				<text><![CDATA[Gg. Majelis No.79, Abadijaya, Kec. Sukmajaya, Kota Depok, Jawa Barat 16417]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8eaea29c-1862-4007-9970-23cc4a89fe68" x="110" y="36" width="298" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PERINGKAT GURU TERBAIK]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="3b3a1a78-6445-487e-88d1-318663c21351" x="-3" y="7" width="100" height="94"/>
+				<imageExpression><![CDATA["C:\\Users\\Joko Prasetyo Utomo\\Documents\\NetBeansProjects\\spk\\src\\bg\\LOGOsmp.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="a7b39aca-06b0-43f8-89f6-deceb26fba6c" x="444" y="54" width="115" height="39"/>
+				<textElement/>
+				<text><![CDATA[Telepon: (021) 7712022
+Provinsi: Jawa Barat]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="461dcd65-b220-4631-bf43-f5077d921756" mode="Opaque" x="0" y="0" width="55" height="20" backcolor="#999999"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Id Guru]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="690ad17f-b44d-49b4-8ab8-a527f282caa8" mode="Opaque" x="55" y="0" width="99" height="20" backcolor="#999999"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Nama Guru]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0288bc7f-0a6e-4623-8b36-20dd1de88546" mode="Opaque" x="154" y="0" width="52" height="20" backcolor="#999999"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Disiplin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="35988c1e-743d-4828-928e-4a281c05137d" mode="Opaque" x="206" y="0" width="69" height="20" backcolor="#999999"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Komitmen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="27dccc44-6651-4dbf-9199-611b51301049" mode="Opaque" x="275" y="0" width="105" height="20" backcolor="#999999"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Penjelasan Materi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="27dccc44-6651-4dbf-9199-611b51301049" mode="Opaque" x="380" y="0" width="62" height="20" backcolor="#999999"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Loyalitas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="27dccc44-6651-4dbf-9199-611b51301049" mode="Opaque" x="442" y="0" width="56" height="20" backcolor="#999999"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Prestasi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="27dccc44-6651-4dbf-9199-611b51301049" mode="Opaque" x="498" y="0" width="56" height="20" backcolor="#999999"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="4c9ec993-c44a-49b2-a109-96cc6c7162e2" x="0" y="0" width="55" height="20"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{idGuru}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cb97e3e2-4dcf-4dee-bd2f-5c1665be95dd" x="55" y="0" width="99" height="20"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namaGuru}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d3ff4f6a-a811-4b13-aaec-d1400d64731f" x="154" y="0" width="52" height="20"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaiDisiplin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="100e2264-675f-49c8-a3c8-94d303188868" x="206" y="0" width="69" height="20"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaiKomitmen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d1bfdcc0-1440-46e7-812a-4c0768d06604" x="275" y="0" width="105" height="20"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalMateri}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="bd63cc43-62cc-4c84-b160-8361063e2fee" x="380" y="0" width="62" height="20"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaiLoyal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="228de53d-03b6-4bf1-a467-621f0247985f" x="442" y="0" width="56" height="20"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nilaiPrestasi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2d9035c7-2499-4031-86a1-091546c85af9" x="498" y="0" width="57" height="20"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="0">
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalAkhir}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="247" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="4723a64a-e36c-4ffb-8bb5-7e01b8878e7a" x="419" y="139" width="136" height="20"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Daniel Saputra, S.Pd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1709563e-50d2-497e-ac3c-dc6820017a12" x="421" y="9" width="134" height="20"/>
+				<textElement textAlignment="Center">
+					<font isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Jakarta. Senin 28 Juni 2024]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1709563e-50d2-497e-ac3c-dc6820017a12" x="421" y="29" width="134" height="20"/>
+				<textElement textAlignment="Center">
+					<font isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[Bagian Adminitrasi]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
